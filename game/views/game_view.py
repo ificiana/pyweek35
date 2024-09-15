@@ -8,7 +8,7 @@ from game.entities.player import Player
 from game.entities.enemy import Enemy
 from game.sounds import change_music
 from game.views import change_views, return_to_view
-from game.views.inventory import Item, get_inventory_ui
+from game.views.inventory import Item, Door, get_inventory_ui
 
 arcade.enable_timings()
 
@@ -25,6 +25,7 @@ class GameView(arcade.View):
         self.floor = None
         self.objects = None
         self.pickables = None
+        self.doors = None
         self.player = None
         self.physics_engine = None
         self.start_time = None
@@ -74,13 +75,28 @@ class GameView(arcade.View):
         self.floor = level_map.sprite_lists["floor"]
         self.walls = level_map.sprite_lists["walls"]
         self.objects = level_map.sprite_lists["objects"]
+        self.doors = arcade.SpriteList(use_spatial_hash=True)
         self.pickables = arcade.SpriteList(use_spatial_hash=True)
 
-        if level_map.sprite_lists.get("pickables") is not None:
-            for item in level_map.sprite_lists["pickables"]:
-                self.pickables.append(
-                    Item(item.properties["file"], Vec2(*item.position), item.angle)
+        for item in level_map.sprite_lists["pickables"]:
+            self.pickables.append(
+                Item(
+                    item.properties["file"],
+                    Vec2(*item.position),
+                    item.angle,
+                    name_color=item.properties.get("name_color"),
                 )
+            )
+
+        for door in level_map.sprite_lists["doors"]:
+            self.doors.append(
+                Door(
+                    door.properties["file"],
+                    Vec2(*door.position),
+                    door.angle,
+                    name_color=door.properties["name_color"],
+                )
+            )
 
         # Set up the player
         self.player = Player(self)
@@ -249,6 +265,7 @@ class GameView(arcade.View):
         self.scene_camera.use()
         if self.floor is not None:
             self.floor.draw()
+        self.doors.draw()
         self.walls.draw()
         if self.objects is not None:
             self.objects.draw()
@@ -257,9 +274,9 @@ class GameView(arcade.View):
         self.enemies.draw()
 
         # TODO: remove from final, for debug
-        if self.enemies[0].arrows:
-            for i in self.enemies[0].arrows:
-                i.draw_hit_box()
+        # if self.enemies[0].arrows:
+        #     for i in self.enemies[0].arrows:
+        #         i.draw_hit_box()
 
         self.player.draw()
 

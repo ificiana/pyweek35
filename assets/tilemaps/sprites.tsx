@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.0" name="sprites" tilewidth="128" tileheight="150" tilecount="25" columns="0">
+<tileset version="1.10" tiledversion="1.10.0" name="sprites" tilewidth="128" tileheight="150" tilecount="33" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="32" height="32" source="../sprites/wall.png"/>
+ </tile>
+ <tile id="3">
+  <image width="32" height="16" source="../sprites/arrow-down.png"/>
+ </tile>
+ <tile id="4">
+  <image width="16" height="32" source="../sprites/arrow-left.png"/>
+ </tile>
+ <tile id="5">
+  <image width="16" height="32" source="../sprites/arrow-right.png"/>
+ </tile>
+ <tile id="6">
+  <image width="32" height="16" source="../sprites/arrow-up.png"/>
  </tile>
  <tile id="11">
   <image width="64" height="64" source="../sprites/enemy.png"/>
@@ -67,31 +79,64 @@
  <tile id="37">
   <properties>
    <property name="file" value="knife.png"/>
+   <property name="name" value="knife"/>
   </properties>
   <image width="70" height="70" source="../items/knife.png"/>
  </tile>
- <tile id="6">
+ <tile id="38">
   <properties>
-   <property name="dir" value="up"/>
+   <property name="file" value="door_red.png"/>
+   <property name="name_color" value="door-red"/>
   </properties>
-  <image width="32" height="32" source="../sprites/arrow-up.png"/>
+  <image width="64" height="38" source="../sprites/door_red.png"/>
  </tile>
- <tile id="5">
+ <tile id="39">
   <properties>
-   <property name="dir" value="right"/>
+   <property name="file" value="door_golden.png"/>
+   <property name="name_color" value="door-golden"/>
   </properties>
-  <image width="32" height="32" source="../sprites/arrow-right.png"/>
+  <image width="64" height="38" source="../sprites/door_golden.png"/>
  </tile>
- <tile id="4">
+ <tile id="40">
   <properties>
-   <property name="dir" value="left"/>
+   <property name="file" value="door_silver.png"/>
+   <property name="name_color" value="door-silver"/>
   </properties>
-  <image width="32" height="32" source="../sprites/arrow-left.png"/>
+  <image width="64" height="38" source="../sprites/door_silver.png"/>
  </tile>
- <tile id="3">
+ <tile id="41">
   <properties>
-   <property name="dir" value="down"/>
+   <property name="file" value="door_wood.png"/>
+   <property name="name_color" value="door-wood"/>
   </properties>
-  <image width="32" height="32" source="../sprites/arrow-down.png"/>
+  <image width="64" height="38" source="../sprites/door_wood.png"/>
+ </tile>
+ <tile id="42">
+  <properties>
+   <property name="file" value="door_golden_side.png"/>
+   <property name="name_color" value="door-golden"/>
+  </properties>
+  <image width="14" height="64" source="../sprites/door_golden_side.png"/>
+ </tile>
+ <tile id="43">
+  <properties>
+   <property name="file" value="door_red_side.png"/>
+   <property name="name_color" value="door-red"/>
+  </properties>
+  <image width="14" height="64" source="../sprites/door_red_side.png"/>
+ </tile>
+ <tile id="44">
+  <properties>
+   <property name="file" value="door_silver_side.png"/>
+   <property name="name_color" value="door_silver"/>
+  </properties>
+  <image width="14" height="64" source="../sprites/door_silver_side.png"/>
+ </tile>
+ <tile id="45">
+  <properties>
+   <property name="file" value="door_wood_side.png"/>
+   <property name="name_color" value="door-wood"/>
+  </properties>
+  <image width="14" height="64" source="../sprites/door_wood_side.png"/>
  </tile>
 </tileset>

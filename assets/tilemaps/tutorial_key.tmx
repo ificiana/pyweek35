@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" source="sprites.tsx"/>
+ <layer id="1" name="floor" width="10" height="10" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAe8BPAxKrjp7J5A6VOiER1xAAAEOED9A==
+  </data>
+ </layer>
+ <layer id="2" name="wall" width="10" height="10" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYCQC8zEQBnzDWB0jHrX4+CCgDxVHD09s4QwAylQBMQ==
+  </data>
+ </layer>
+ <layer id="4" name="object" width="10" height="10" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg8QGmgHUAm0KOiWQAxwABR
+  </data>
+ </layer>
+ <layer id="3" name="key" width="10" height="10" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAPsKSTPUMdAABDeAA6
+  </data>
+ </layer>
+ <layer id="5" name="player" width="10" height="10" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA+8KWBmSMFAABgnABO
+  </data>
+ </layer>
+</map>

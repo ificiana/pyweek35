@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" source="sprites.tsx"/>
+ <layer id="2" name="floor" width="15" height="15" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAMCJKBR/WO6h1seoWooJdcAADifQte
+  </data>
+ </layer>
+ <layer id="1" name="wall" width="15" height="15" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYCQT8zGQB/iooBebe8i1lxi30EIvMsAXxoT04pKntl5i45/U+OVDYw+EXmx8UvWSm48AeZUCCQ==
+  </data>
+ </layer>
+ <layer id="5" name="objects" width="15" height="15" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi8QJRK5ghTyZxRMApoAQBybAAp
+  </data>
+ </layer>
+ <layer id="6" name="help" width="15" height="15" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcCBHgjwLqAELhLIRHbigCQn6glh8HOqwAHRsAow==
+  </data>
+ </layer>
+ <layer id="3" name="player" width="15" height="15" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAM8FKofxSMgpEOAC34AA4=
+  </data>
+ </layer>
+</map>

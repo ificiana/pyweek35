@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="80" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="1">
  <tileset firstgid="1" source="sprites.tsx"/>
- <layer id="2" name="floor" width="80" height="50">
+ <layer id="1" name="floor" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJzt2FEOgjAQRdHuQJ39L9bwYSREWzpvSof03qSfDvUIEiiFiIiIiIh6enSurWfwas0cdcyXsPDDD795fib6GX74icdc5fo1/PCb6DfqmPjVP/PJyvf/fh9+/vMryu/Yv9/qbKv5KTN+zcQPP/zwW9VvX8+9qGXh6Y5+kfNGLvxivr9a5J7Ud0JX+/U+OxyfI/DT/TzV9jTbJfv5h5/mV7tG8dP9vKnvLTyzMl6/yp5qe802Ez/88MNvdb+t3nvf1X6WcGbLItP5h5++12wz8cMPP/zwww8//O7qR/7ePxWy/Q==
+   eJwTYGBgEBjFo5gMLATFA+2OUUxe3IzG38BjfiyYHvGCzV4YHrV31F5a2EvLND1Q9hLCAA30JV8=
   </data>
  </layer>
- <layer id="1" name="walls" width="80" height="50">
+ <layer id="4" name="player" width="30" height="20" locked="1">
   <data encoding="base64" compression="zlib">
-   eJztmksOgzAMBeECvf9xKxaoKKog8cvHxjNSNq1s06lRcNNtAwAAAIBM7CxpfdqVm2LUnCtq1sTjT4vHnxaf2V8P8KeR2V+m+3cE+FtbM5I/j9/Z2/1d54R/r+Fvfs4y/ljlTHdyN/PdzYTWa1Hen5WzjO/dS9Z8+PvlHBGHPy0Of1pcJn8te1Hts8TTnmXNqeCp/1aAPw1LT5f9Henz9sZj/0Vi1PxRs0Zd00w8zr/403NGwas/63520uNcuyZXpvs3y++n+NPq4k+riz+tbkZ/rXvfW57/VCL1n0ci+fN8//asiz+tLv60uvjT6uJPq4s/rS7+tLoZ/VnOnaz/LVLOurzlPOK/tYYNcQ==
+   eJxjYBgFvAPtgFEwCkbBKBgFo2AUDCsAAHYMAA4=
   </data>
  </layer>
- <layer id="3" name="objects" width="80" height="50">
+ <layer id="3" name="object" width="30" height="20" locked="1">
   <data encoding="base64" compression="zlib">
-   eJzt2TsKwCAQBUDvEBJIld/975heAoKoi2SmkRXUV/tSAgAAGGvLVpjZVZgBAAD4pyc6AFS6owMAMDV/5jF0bwDQzxkdACDIWXluaRkCqLZ+7O1B70JPR6d7876sNJe07I51eYz0AlJZAoI=
+   eJxjYBgFwx0Ik6BWnmauGAVDFSgOtANGwbABolQwQ4wKZoyCUUAPAACflgB/
   </data>
  </layer>
- <layer id="4" name="pickables" width="80" height="50">
+ <layer id="2" name="wall" width="30" height="20">
   <data encoding="base64" compression="zlib">
-   eJztzjERAAAIBKBPYy77pzCCk+cCCUgAAAAAAAAAAAAAAAAAAOBWJf19AHYDKYYAhw==
+   eJzjY2Bg4BsgjA8QkidH7ai9lNvLiIRhgBENDyf/DgV70cOfEU0NNnls8UdN/9ICDDd7CcULNntx6cGmHxcgJq2S6l9i1A82e0kpr7CZSSjMaeFfYsBgtZdYNbSyl5i8QwomxkwAYyAFTQ==
+  </data>
+ </layer>
+ <layer id="5" name="enemy" width="30" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlACegXbAKMAAhOJkNM5GwWgaGAWjYBTQGgAAO28AMQ==
+  </data>
+ </layer>
+ <layer id="6" name="arrows" width="30" height="20" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlAI2HOKsdHXFKEAG6HGCHhe44gyb2lEw+AC++CMGsFDFFaNgFAxtwE6h/tGyEj8AACxvADg=
   </data>
  </layer>
 </map>

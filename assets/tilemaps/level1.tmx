@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="80" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="1">
+<map version="1.10" tiledversion="1.10.0" orientation="orthogonal" renderorder="right-down" width="80" height="50" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="1">
  <tileset firstgid="1" source="sprites.tsx"/>
  <layer id="2" name="floor" width="80" height="50" locked="1">
   <data encoding="base64" compression="zlib">
@@ -8,7 +8,12 @@
  </layer>
  <layer id="1" name="walls" width="80" height="50" locked="1">
   <data encoding="base64" compression="zlib">
-   eJztmksOgzAMBeECvf9xKxaoKKog8cvHxjNSNq1s06lRcNNtAwAAAIBM7CxpfdqVm2LUnCtq1sTjT4vHnxaf2V8P8KeR2V+m+3cE+FtbM5I/j9/Z2/1d54R/r+Fvfs4y/ljlTHdyN/PdzYTWa1Hen5WzjO/dS9Z8+PvlHBGHPy0Of1pcJn8te1Hts8TTnmXNqeCp/1aAPw1LT5f9Henz9sZj/0Vi1PxRs0Zd00w8zr/403NGwas/63520uNcuyZXpvs3y++n+NPq4k+riz+tbkZ/rXvfW57/VCL1n0ci+fN8//asiz+tLv60uvjT6uJPq4s/rS7+tLoZ/VnOnaz/LVLOurzlPOK/tYYNcQ==
+   eJztmtEOwjAIRbcf8P8/1+xh0TRaO25ZQc5J+qIB9IS1w7ltAAAAAFCJnSWtx3Xlphg154qaI/H40+Lxp8VX9jcD/GlU9rdPiM/iz4NK+58Hlfyp15ql5kh8Fn+Wmu9zwqfX8Hd/zjb+WO1Md9Kb+XozofWzKO/flbONn91L1nz4e+X0iMOfFoc/La6Svytn0ei9xK8zy5pTIVL/rQB/Gpaebvs70/edTcT+y4TX/DGyvuEx53sRcf7N1M8Rr1/86Tmt59nJjOfaI7lW+evtcV79F/E370z7H/408KeBP43I/q6eff9y/6eSqf8iksmfx1yo5szkL/L+N7Mu/rS6+NPq4k+riz+tLv60uhX9WZ47Wf9bpDzripbziH8C3pgNFg==
+  </data>
+ </layer>
+ <layer id="6" name="doors" width="80" height="50" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJACAIBdDm6dD+4zVB0KES8717IEj6bQ0AAACAlRH8HqrwV8isRxfANr0CIJpdBFThzgd+dmvGncyKcicAGdhXf7uRmdyaAADw1gRA8QI/
   </data>
  </layer>
  <layer id="3" name="objects" width="80" height="50" locked="1">
@@ -19,21 +24,6 @@
  <layer id="4" name="pickables" width="80" height="50" locked="1">
   <data encoding="base64" compression="zlib">
    eJztzjERAAAIBKBPYy77pzCCk+cCCUgAAAAAAAAAAAAAAAAAAOBWJf19AHYDKYYAhw==
-  </data>
- </layer>
- <layer id="5" name="arrows" width="80" height="50" locked="1">
-  <data encoding="base64" compression="zlib">
-   eJzt2DkSgCAQBEACj///2Mhwq7Y4FKU7RiWQgaEUAAAAIlvj83vFe1u/CazjSI6TK3xN9t+OnF1mAQDtenfK7B4XddE32Jfhn6xtZlbbKd2fjNXa9Xub6bwE9BHluPUOAOup7R/ODUBWlDPuTQHGuHNXzsLzLhUcAI8=
-  </data>
- </layer>
- <layer id="11" name="enemies" width="80" height="50" locked="1">
-  <data encoding="base64" compression="zlib">
-   eJzt1ssJADAIREELSP/15mQBQj6wzFTgQZ5WAQAA8Nr6PQAQQUtIZbcBSOGmAan0DZjSDeA2nQEAmr8AAADgjA19dABh
-  </data>
- </layer>
- <layer id="10" name="player" width="80" height="50" locked="1">
-  <data encoding="base64" compression="zlib">
-   eJztzgENAAAIA6AXsH9dY3w6SEACAAAAAAAAAAAAAAAAAHdNOwAAjyyd+AAO
   </data>
  </layer>
 </map>
